@@ -1,0 +1,15 @@
+h1{
+    font-size: 40px;
+    font-family: 'Bebas Neue', cursive;
+    
+}
+
+p{
+    font-size: 20px;
+    font-family: 'Roboto Condensed', sans-serif;
+    
+}
+
+.contenedor{
+    margin: 0 25px 0 25px
+}
