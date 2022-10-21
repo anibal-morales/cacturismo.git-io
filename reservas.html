@@ -36,11 +36,6 @@
         </ul>
     </nav>
 
-<<<<<<< HEAD
-=======
-    <h1 class="titulo">CONOCE ARGENTINA CON NOSOTROS</h1>
-
->>>>>>> 9705b24682e50beff82a802604e29efe57f3e66e
     <br><br>
 
     <form action="" name="formulario" method="get">
@@ -50,7 +45,7 @@
 
 
 
-        <input type="email" name="email" id="email" placeholder="E-Mail">
+        <input type="text" name="email" id="email" placeholder="E-Mail">
 
         <select name=interes>
             <option value="Elegir">Que destino le interesa?
@@ -68,27 +63,33 @@
     </form>
     <script>
 
+        // Captura de datos
         var formulario = document.getElementsByName("formulario")[0],
             datos = formulario.datos,
             boton = document.getElementById("boton");
 
+        // Validacion de Nombre y Apellido
         validarNombre = function (e) {
             if (formulario.nombre.value == 0) {
                 alert("Ingrese su Nombre y Apellido")
                 e.preventDefault();
             }
         }
-
-       
-
-
-
-        var validar = function (e) {
-            validarNombre(e);
-            
-<<<<<<< HEAD
+        //Validacion de E-mail
+        function validarCorreo(email) {
+            var expReg = /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/;
+            var emailValido = expReg.test(email);
+            if (emailValido == false) {
+                alert('Introduzca un E-mail valido');
+            }
         }
 
+        //Funcion Validadora de Formulario
+        var validar = function (e) {
+            validarNombre(e);
+            validarCorreo(formulario.email.value)
+
+        }
 
         formulario.addEventListener("submit", validar);
 
@@ -100,14 +101,6 @@
 
 
     <br>
-=======
-            <input type="date" placeholder="¿Que fecha desea viajar?">
-            
-            <textarea name="mensaje" placeholder="Escriba aqui su mensaje..."></textarea>
-            <input type="button" value="Enviar Datos" id="boton">
-        </form>
-        <br>
->>>>>>> 9705b24682e50beff82a802604e29efe57f3e66e
 
 
 
