@@ -19,11 +19,6 @@
     <header>
         <div class="contenedor-header">
             <H1 class="logo">CAC TURISMO</H1>
-            <div>
-                <img src="./img/header-avion.jpg" alt="Avion">
-                <img src="./img/viajes-a-medida-header.jpg" alt="foto viajes">
-            </div>
-
         </div>
 
     </header>
@@ -76,6 +71,7 @@
             }
         }
         //Validacion de E-mail
+
         function validarCorreo(email) {
             var expReg = /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/;
             var emailValido = expReg.test(email);
@@ -88,7 +84,6 @@
         var validar = function (e) {
             validarNombre(e);
             validarCorreo(formulario.email.value)
-
         }
 
         formulario.addEventListener("submit", validar);

@@ -1,76 +1,44 @@
-.titulo{
+header{
+    background-image: url(/img/PORTADA.jpg);
+}
+main {
     display: flex;
+    align-items: center;
     justify-content: center;
-    font-weight: bold;
-    font-size: 35px;
-    margin: 20px 0 20px 0;
-
+    min-height: 100vh;
+    background: #f3f1f5;
 }
 
-.contenedor{
-    display: flex;
-    margin: 20px 0 20px 0;
-}
-
-.foto{
-    width: 50%;
-}
-
-.descripcion{
-    font-size: 30px;
-    font-weight: bold;
-    text-align: center;
-}
-p{
+.card {
     margin: 10px;
-    font-size: 20px;
-    font-family: 'Roboto Condensed', sans-serif;
-    text-align: justify;
+    width: 200px;
+    height: 300px;
+    border-radius: 5px;
+    background: var(--i);
+    background-size: cover;
+    box-shadow: 3px 5px 5px rgba(3, 32, 51, .8);
+    overflow: hidden;
 }
 
-@media screen and (min-width: 992px){ 
-
+.content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px ;
+    background: black;
+    opacity: 0;
+    transition: 1.5s;
 }
-@media screen and (min-width: 1000px){
 
+.content h2, a {
+    color: rgba(255, 255, 255, .8);
+    margin: 10px 0;
 }
-@media screen and (max-width: 1000px){
 
-}
-@media screen and (max-width: 750px){
-
-}
-@media screen and (max-width: 360px){
-    .logo{
-        position: absolute;
-        margin-left: 80px;   
-    }
-    .titulo{
-        text-align: center;
-        font-weight: bold;
-        font-size: 30px;
-        margin: 20px;
-        display: flex;
-        padding: 20px;
-        text-decoration: underline; 
-    } 
-    .descripcion{
-        font-size: 25px;
-    }
-    .contenedor{
-        margin: auto;  
-    }
-    ul,a{
-        margin: auto;
-        padding: 5px;
-        display:block;
-        text-align: center;
-    }
-    .foto{
-        display: none;
-        position: absolute;
-    }
-    p{
-        text-align: justify;   
-    }
+.card:hover .content {
+    opacity: 1;
 }

@@ -1,0 +1,76 @@
+.titulo{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 35px;
+    margin: 20px 0 20px 0;
+
+}
+
+.contenedor{
+    display: flex;
+    margin: 20px 0 20px 0;
+}
+
+.foto{
+    width: 50%;
+}
+
+.descripcion{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+p{
+    margin: 10px;
+    font-size: 20px;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: justify;
+}
+
+@media screen and (min-width: 992px){ 
+
+}
+@media screen and (min-width: 1000px){
+
+}
+@media screen and (max-width: 1000px){
+
+}
+@media screen and (max-width: 750px){
+
+}
+@media screen and (max-width: 360px){
+    .logo{
+        position: absolute;
+        margin-left: 80px;   
+    }
+    .titulo{
+        text-align: center;
+        font-weight: bold;
+        font-size: 30px;
+        margin: 20px;
+        display: flex;
+        padding: 20px;
+        text-decoration: underline; 
+    } 
+    .descripcion{
+        font-size: 25px;
+    }
+    .contenedor{
+        margin: auto;  
+    }
+    ul,a{
+        margin: auto;
+        padding: 5px;
+        display:block;
+        text-align: center;
+    }
+    .foto{
+        display: none;
+        position: absolute;
+    }
+    p{
+        text-align: justify;   
+    }
+}
