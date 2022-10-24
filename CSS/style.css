@@ -153,6 +153,8 @@ header img {
     margin-left: 60px;
     padding: 25px 0 25px 0;
     margin: auto;
+    color: white;
+    border: 2px solid black;
     
 }
 
