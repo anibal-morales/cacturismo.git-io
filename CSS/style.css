@@ -139,7 +139,7 @@ table {
 }
 
 header{
-    background-image: url(./img/PORTADA.jpg);
+    background-image: url('img/PORTADA.jpg');
 }
 
 header img {
