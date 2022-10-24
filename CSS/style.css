@@ -139,7 +139,11 @@ table {
 }
 
 header{
+<<<<<<< HEAD
     background-image: url('/img/PORTADA.jpg');
+=======
+    background-image: url('./img/PORTADA.jpg');
+>>>>>>> 61f8c79839b91be0f8810a3d78eacf0038a271d3
 }
 
 header img {
