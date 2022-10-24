@@ -28,6 +28,13 @@ p{
     text-align: justify;
 }
 
+.paquete{
+    margin: 60px;
+    width: 40%;
+    font-family: 'Roboto Condensed', sans-serif;
+
+}
+/*
 @media screen and (min-width: 992px){ 
 
 }
@@ -73,4 +80,4 @@ p{
     p{
         text-align: justify;   
     }
-}
+}*/
