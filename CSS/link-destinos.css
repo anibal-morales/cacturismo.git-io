@@ -1,25 +1,28 @@
 .titulo{
     display: flex;
     justify-content: center;
-    font-weight: bold;
-    font-size: 35px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 60px;
     margin: 20px 0 20px 0;
 
 }
 
 .contenedor{
     display: flex;
+    justify-content: space-around;
     margin: 20px 0 20px 0;
 }
 
 .foto{
     width: 50%;
+    margin: 30px 60px 30px 0;
 }
 
 .descripcion{
     font-size: 30px;
     font-weight: bold;
     text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 p{
     margin: 10px;
