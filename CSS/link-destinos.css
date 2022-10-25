@@ -37,50 +37,11 @@ p{
     font-family: 'Roboto Condensed', sans-serif;
 
 }
-/*
-@media screen and (min-width: 992px){ 
+
+.video-frame{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin-bottom: 30px;
 
 }
-@media screen and (min-width: 1000px){
-
-}
-@media screen and (max-width: 1000px){
-
-}
-@media screen and (max-width: 750px){
-
-}
-@media screen and (max-width: 360px){
-    .logo{
-        position: absolute;
-        margin-left: 80px;   
-    }
-    .titulo{
-        text-align: center;
-        font-weight: bold;
-        font-size: 30px;
-        margin: 20px;
-        display: flex;
-        padding: 20px;
-        text-decoration: underline; 
-    } 
-    .descripcion{
-        font-size: 25px;
-    }
-    .contenedor{
-        margin: auto;  
-    }
-    ul,a{
-        margin: auto;
-        padding: 5px;
-        display:block;
-        text-align: center;
-    }
-    .foto{
-        display: none;
-        position: absolute;
-    }
-    p{
-        text-align: justify;   
-    }
-}*/
