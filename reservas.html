@@ -42,7 +42,7 @@
 
         <input type="text" name="email" id="email" placeholder="E-Mail">
 
-        <select name=interes>
+        <select name="destino" id="destino">
             <option value="Elegir">Que destino le interesa?
             <option value="Mendoza">Mendoza
             <option value="Bariloche">Bariloche
@@ -79,11 +79,20 @@
                 alert('Introduzca un E-mail valido');
             }
         }
+        //Validacion de destino
+        validarDestinos = function (e) {
+            if (formulario.destino.selectedIndex == 0) {
+                alert("Ingrese destino a consultar")
+                document.formulario.destino.focus()
+                return 0
+            }
+        }
 
         //Funcion Validadora de Formulario
         var validar = function (e) {
             validarNombre(e);
-            validarCorreo(formulario.email.value)
+            validarCorreo(formulario.email.value);
+            validarDestinos(e);
         }
 
         formulario.addEventListener("submit", validar);
